@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200&display=swap');
+
+:root{
+--primary-color:#333;
+--secondary-color:#444;
+--overlay-color:rgba(0,0,0,0.7);
+ 
+}
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;;
+
+}
+
+/*Setup*/
+body{
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+   /* background-color: #ba9a8e;
+background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);*/
+
+}
+h1,h2,h3,h4{
+    line-height: 1.3;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    line-height: 1.8rem;
+}
+a:hover{
+    color: #ba9a8e;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding:0 2rem;
+}
+header{
+    background-color: var(--primary-color);
+}
+/*Navigation Menu*/
+
+.navbar{
+ display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rab(3, 3, 94);
+color: white;
+}
+
+.logo{
+font-size: 1.5rem;
+margin: •5rem; 
+   
+}
+
+
+.navbar-links ul{
+margin:0;
+padding:0;
+display: flex;
+  }
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1.5rem;
+
+}
+
+.navbar-links li:hover{
+    background-color: black;
+}
+
+.toggle-button{
+
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar{
+
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+    
+
+
+
+/* Section a Styles*/
+
+
+.section-a{
+    
+      background-color: #ba9a8e;
+background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
+  
+
+}
+
+.section-a h1{
+    text-transform: uppercase;
+    color:black;
+    font-size: 3rem;
+
+}
+.section-a p{
+    margin: 1rem 0;
+}
+.p-color{
+    color: whitesmoke;
+}
+.model{
+    color: rgb(104, 4, 4);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.brand{  
+    font-weight: bolder;
+    font-size: larger;
+    color: black;
+}
+
+.section-a .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+    justify-content:center;
+    grid-gap:3em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+}
+.phones{
+    width: 90%;
+    height: auto;
+    
+    
+}
+.sony{
+    font-size: 1.5rem;
+   
+}
+
+/* Section c Styles (Sound)*/
+
+.section-c {
+    
+    height: 600px;
+    position:relative;
+    background:url(https://i.ibb.co/0JDGqCD/sony.jpg)no-repeat center/cover;
+    
+}
+  
+  .section-c-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    padding: 5rem 0;
+    
+  }
+  
+  .section-c-inner h3 {
+    font-size: 2rem;
+  }
+  
+  .section-c-inner h2 {
+    font-size: 75px;
+    margin-top: 1rem;
+  }
+  
+  .section-c-inner p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  
+  
+  
+  /*Utilities*/
+ 
+
+.btn{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 30px;
+}
+.btn:hover{
+    background: black;
+}
+
+.overlay{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+  
+  
+  
+  /*Section b Styles (Headphone Feautures */
+  .section-b{
+
+    
+    background-color:#fafafa;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4em;
+    
+  }
+
+  .b-title{
+      text-align: center;
+      margin-bottom:3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color:#96705b;
+      font-size: 2rem;
+      margin-top: 2rem;
+
+    
+  }
+
+  .inner-b{
+      display: grid;
+      grid-template-columns:repeat(3,20rem);
+      grid-row-gap: 1rem;
+      
+      justify-content:center;
+      align-items: center;
+      text-align: center;
+      
+  }
+
+  .inner-description ul{
+      margin-top: rem;
+      
+      
+    
+
+  }
+  .inner-description h4{
+
+    font-weight: 800;
+    font-size: 1.5rem;
+    
+    color: #444;
+    
+  }
+
+  .fa-solid{
+      color:#ba9a8e;;
+      width:5px;
+      height: 5px;
+
+
+  }
+  .description-title{
+
+  }
+.hear{
+    color: #ba9a8e;
+
+}
+img{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+
+
+/* Footer Section */
+
+.section-footer{
+    background-color:black;
+    color: #fff;
+    height: 200px;
+    font-size: 14px;
+
+}
+
+.section-footer h3{
+    color:#ba9a8e;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.section-footer .container{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid: gap 1rem;
+    justify-content: center;
+    
+    
+
+}
+
+.section-footer i{
+    
+    padding:.5rem;
+    
+}
+
+/* Email Form*/
+
+.email-form{
+    width: 100%;
+    display: inline-block;
+    background-color:#444;
+    position: relative;
+    border-radius: 20px;
+    line-height: 0;
+    margin-top: 1rem;
+}
+
+.email-form .form-control{
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3rem 0 1.5rem; 
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+
+}
+.email-form .submit{
+
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 33px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: black;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+
+}
+
+/* Tablet Styles */
+
+@media screen and (max-width: 796px) {
+
+    /*.navbar .nav a{
+        padding: 0 1rem;
+        font-size: 1rem;
+    }*/
+    
+    img{
+        width: 70%;
+        margin: auto;
+        
+    }
+    .toggle-button{
+        display: flex;
+    }
+    
+    .navbar-links{
+        display: none;
+        width: 100%;
+
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display:flex;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+    .section-a .container{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:0px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 2rem;
+
+    }
+
+    .section-a .container div:first-child{
+        order: 2;
+    }
+
+    .section-a .container div:last-child{
+        order: -1;
+    }
+    .section-b{
+        padding: 1em;
+    }
+
+    .inner-description{
+        margin: 0;
+        padding: 0;
+    }
+    .b-title{
+        margin-top:.5em ;
+    }
+    
+    
+    
+    
+    
+    .inner-b{
+        grid-template-columns: repeat(1,15rem);
+        
+        
+        
+    }
+    .section-c-inner h2{
+        font-size: 55px;
+    }
+    
+    
+
+    .section-footer{
+        height: 100%;
+        padding-bottom: 2rem;
+    
+    }
+    .section-footer .container{
+        grid-template-columns:1fr;
+        text-align: center;
+        
+
+    }
+
+    .sub-list{
+        display: none;
+    }
+
+    }
+     
+    /* Mobile Styles*/
+
+    @media screen and (max-width: 600px){
+        
+        img{
+            width: 60%;
+            height: 60%;
+        }
+
+
+        .inner-b{
+            grid-template-columns: repeat(1,15rem);
+        }
+        .section-b{
+            height: ;
+            padding-bottom: 1rem;
+        }
+
+        .section-c{
+            height: 350px; 
+            
+            
+        }
+        .section-c-inner h2{
+            font-size: 2.5rem;
+        }
+
+        .section-c-inner h3{
+            font-size: 1.3rem;
+        }
+
+        .section-c-inner p{
+            font-size: 1.1rem;
+        }
+        .b-title{
+
+            margin-top: 1rem;
+            
+        }
+
+        .inner-description h4{
+            padding-bottom: 0;
+        }
+        .phones{
+            
+        }
+        .section-a .container div:first-child{
+            order: 2;
+        }
+
+        .section-a .container div:last-child{
+            order: -1;
+        }
+
+        .section-c-inner h2{
+            font-size:2rem ;
+        }
+
+        .toggle-button{
+            width: 26px;
+            height: 19px;
+
+        }
+    
+
+
+
+
+    
+    }
