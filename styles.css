@@ -3,7 +3,7 @@
 :root{
 --primary-color:#333;
 --secondary-color:#444;
---overlay-color:rgba(0,0,0,0.7);
+--overlay-color:rgba(0,0,0,0.8);
  
 }
 
@@ -35,6 +35,7 @@ a{
     color: whitesmoke;
     text-decoration: none;
     line-height: 1.8rem;
+
 }
 a:hover{
     color: #ba9a8e;
@@ -49,7 +50,7 @@ img{
     padding:0 2rem;
 }
 header{
-    background-color: var(--primary-color);
+    background-color:black;
 }
 /*Navigation Menu*/
 
@@ -57,12 +58,12 @@ header{
  display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: rab(3, 3, 94);
+background-color:black;
 color: white;
 }
 
 .logo{
-font-size: 1.5rem;
+font-size: 20px;
 margin: •5rem; 
    
 }
@@ -82,6 +83,7 @@ display: flex;
     text-decoration: none;
     color: whitesmoke;
     padding: 1.5rem;
+    font-size: 16px;
 
 }
 
@@ -120,9 +122,7 @@ display: flex;
 
 .section-a{
     
-      background-color: #ba9a8e;
-background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
-  
+      
 
 }
 
@@ -130,24 +130,29 @@ background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
     text-transform: uppercase;
     color:black;
     font-size: 3rem;
+    font-weight: 800;
 
 }
 .section-a p{
     margin: 1rem 0;
 }
 .p-color{
-    color: whitesmoke;
+    color: black;
 }
 .model{
-    color: rgb(104, 4, 4);
+    color:gray;
     font-weight: bolder;
     font-size: 1rem;
 }
 
 .brand{  
     font-weight: bolder;
-    font-size: larger;
-    color: black;
+    font-size: 16px;
+    color: #BA9483;
+}
+
+.move{
+    color: #BA9483;
 }
 
 .section-a .container{
@@ -162,13 +167,13 @@ background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
 
 }
 .phones{
-    width: 90%;
+    width: 80%;
     height: auto;
     
     
 }
 .sony{
-    font-size: 1.5rem;
+    font-size: 1rem;
    
 }
 
@@ -178,7 +183,8 @@ background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
     
     height: 600px;
     position:relative;
-    background:url(https://i.ibb.co/0JDGqCD/sony.jpg)no-repeat center/cover;
+    background:url(https://i.ibb.co/jWcLpCb/sonyheadphone1.png)no-repeat center/cover;
+    
     
 }
   
@@ -197,7 +203,7 @@ background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
   }
   
   .section-c-inner h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .section-c-inner h2 {
@@ -207,7 +213,7 @@ background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
   
   .section-c-inner p {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
   }
 
@@ -247,11 +253,9 @@ background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
   .section-b{
 
     
-    background-color:#fafafa;
-    margin: 0 auto; 
+    background-color:#fafafa; 
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
     padding-bottom: 4em;
     
   }
@@ -261,8 +265,8 @@ background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
       margin-bottom:3rem;
       text-transform: uppercase;
       font-weight: bold;
-      color:#96705b;
-      font-size: 2rem;
+      color:black;
+      font-size: 1.5rem;
       margin-top: 2rem;
 
     
@@ -273,14 +277,14 @@ background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
       grid-template-columns:repeat(3,20rem);
       grid-row-gap: 1rem;
       
-      justify-content:center;
+      justify-content:space-evenly;
       align-items: center;
-      text-align: center;
+      
       
   }
 
   .inner-description ul{
-      margin-top: rem;
+      margin-top: .5rem;
       
       
     
@@ -288,23 +292,24 @@ background-image: linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);
   }
   .inner-description h4{
 
-    font-weight: 800;
-    font-size: 1.5rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #BA9483;
+    font-weight: bold;
     
-    color: #444;
     
   }
 
   .fa-solid{
       color:#ba9a8e;;
-      width:5px;
-      height: 5px;
+      width:4px;
+      height: 4px;
+      margin-right: 5px;
 
 
   }
-  .description-title{
+      
 
-  }
 .hear{
     color: #ba9a8e;
 
@@ -411,6 +416,11 @@ img{
         width: 70%;
         margin: auto;
         
+    }
+
+    .phones{
+
+        width: 50%;
     }
     .toggle-button{
         display: flex;
@@ -548,6 +558,8 @@ img{
             padding-bottom: 0;
         }
         .phones{
+            display: block;
+            width: 60%;
             
         }
         .section-a .container div:first-child{
@@ -564,8 +576,15 @@ img{
 
         .toggle-button{
             width: 26px;
-            height: 19px;
+            height: 18px;
 
+        }
+
+        .logo{
+           font-size: 18px;
+        }
+        .navbar{
+            padding: 5px;
         }
     
 
